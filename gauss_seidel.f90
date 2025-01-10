@@ -8,7 +8,7 @@ program gauss_seidel
     real, allocatable :: A(:,:), b(:), x(:), x_old(:)   ! Vetores alocados na heap, tamanho determinado no runtime (necessário defini-los assim em Fortran)
 
     ! Tamanho do sistema linear (obrigatoriamente se torna uma matriz quadrada, deve seguir a definição de nossa representação)
-    print *, "Enter the size of the coefficient matrix (n):"
+    print *, "Enter the column size of the coefficient matrix (n):"
     read *, n
 
     ! Valida se o número inserido é maior ou igual a 1
